@@ -51,7 +51,7 @@ Blender's default orthogonal views (accessible via numpad 1, 3, 7, etc.) are loc
 
 ## Screenshots
 
-*Coming soon*
+![View Rotation Helper Panel](screenshot.png)
 
 ## Contributing
 
