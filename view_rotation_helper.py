@@ -1,10 +1,10 @@
 bl_info = {
     "name": "View Rotation Helper",
     "author": "Vince",
-    "version": (1, 0, 0),
+    "version": (1, 1, 0),
     "blender": (3, 0, 0),
     "location": "View3D > Sidebar > View",
-    "description": "Quick access to orthogonal views with rotation control",
+    "description": "Quick access to orthogonal views with multiple rotation angles",
     "category": "3D View",
 }
 
@@ -97,12 +97,29 @@ class VIEW3D_PT_view_rotation_helper(bpy.types.Panel):
         box = layout.box()
         box.label(text="Rotate Current View:", icon='FILE_REFRESH')
         
+        # First row: ±45°
+        row = box.row(align=True)
+        row.scale_y = 1.5
+        op = row.operator("view3d.rotate_view_90", text="-45°", icon='LOOP_BACK')
+        op.angle = -45.0
+        op = row.operator("view3d.rotate_view_90", text="+45°", icon='LOOP_FORWARDS')
+        op.angle = 45.0
+        
+        # Second row: ±90°
         row = box.row(align=True)
         row.scale_y = 1.5
         op = row.operator("view3d.rotate_view_90", text="-90°", icon='LOOP_BACK')
         op.angle = -90.0
         op = row.operator("view3d.rotate_view_90", text="+90°", icon='LOOP_FORWARDS')
         op.angle = 90.0
+        
+        # Third row: ±180°
+        row = box.row(align=True)
+        row.scale_y = 1.5
+        op = row.operator("view3d.rotate_view_90", text="-180°", icon='LOOP_BACK')
+        op.angle = -180.0
+        op = row.operator("view3d.rotate_view_90", text="+180°", icon='LOOP_FORWARDS')
+        op.angle = 180.0
 
 
 # Registration

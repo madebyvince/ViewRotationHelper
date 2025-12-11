@@ -5,6 +5,19 @@ All notable changes to the View Rotation Helper add-on will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2024-12-11
+
+### Added
+
+- Additional rotation angles: ±45° and ±180°
+- Three-row layout for rotation buttons (45°, 90°, 180°)
+- More flexible view rotation options for precise positioning
+
+### Changed
+
+- Reorganized rotation section with three rows of buttons
+- Updated interface to accommodate new rotation angles
+
 ## [1.0.0] - 2024-12-02
 
 ### Added
@@ -33,6 +46,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Release Notes
 
+### Version 1.1.0
+This update adds more rotation flexibility with additional angle options. Users can now rotate views by ±45°, ±90°, or ±180°, providing finer control for precise view positioning. The interface has been reorganized with a three-row layout for better clarity.
+
+**New in this version:**
+
+- ±45° rotation buttons for subtle adjustments
+- ±180° rotation buttons for quick view flipping
+- Improved button layout with three organized rows
+
 ### Version 1.0.0
 This is the first stable release of View Rotation Helper. The add-on addresses a common workflow need in Blender: the ability to rotate orthogonal views, which is not natively available in Blender's default view controls.
 
@@ -45,5 +67,3 @@ This is the first stable release of View Rotation Helper. The add-on addresses a
 - Additional view alignment tools
 
 ---
-
-[1.0.0]: https://github.com/yourusername/view-rotation-helper/releases/tag/v1.0.0

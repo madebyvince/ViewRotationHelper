@@ -11,7 +11,7 @@ A Blender add-on that provides quick access to orthogonal views with rotation co
 ## Features
 
 - **Quick Orthogonal Views**: Six buttons for instant access to Top, Bottom, Front, Back, Left, and Right views
-- **View Rotation**: Rotate any orthogonal view by ±90° increments
+- **View Rotation**: Rotate any orthogonal view by ±45°, ±90°, or ±180° increments
 - **User-Friendly Interface**: Clean panel in the 3D View sidebar with clear icons
 - **Efficient Workflow**: No need to use the numpad or manually rotate locked orthogonal views
 
@@ -19,7 +19,7 @@ A Blender add-on that provides quick access to orthogonal views with rotation co
 
 Blender's default orthogonal views (accessible via numpad 1, 3, 7, etc.) are locked and cannot be rotated. This add-on fills that gap by allowing you to:
 - Set any orthogonal view with a single click
-- Rotate these views in 90° increments
+- Rotate these views in 45°, 90°, or 180° increments
 - Combine views and rotations for precise angles (e.g., Top view rotated 90°)
 
 ## Installation
@@ -36,13 +36,15 @@ Blender's default orthogonal views (accessible via numpad 1, 3, 7, etc.) are loc
 2. Navigate to the `View` tab
 3. You'll see the "View Rotation Helper" panel with:
    - **Orthogonal Views section**: 6 buttons arranged in pairs (Top/Bottom, Front/Back, Left/Right)
-   - **Rotate Current View section**: Two buttons for -90° and +90° rotation
+   - **Rotate Current View section**: Six buttons for -45°, +45°, -90°, +90°, -180°, and +180° rotation
 
 ### Example Workflow
 
 - Click `Top` to set the top view
+- Click `+45°` for a slight rotation
 - Click `+90°` to rotate the view 90 degrees clockwise
-- Click `-90°` to rotate back or continue rotating
+- Click `+180°` to flip the view completely
+- Use negative angles to rotate counter-clockwise
 
 ## Compatibility
 
